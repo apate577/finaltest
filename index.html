@@ -1,0 +1,264 @@
+<!-- 
+    Name    : Ayush Santoshkumar Patel
+    StudID  : 115585226
+    File    : index.html
+    WEB222 FINAL ASSESSMENT
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/25f9f31579.js" crossorigin="anonymous"></script>
+    <title>Introductory Page!!</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body id="bodyps" class="container">
+  <section id="landing">
+    <div class="First">
+        <img src="images/my.png" alt="That's Prabh" width="400px" height="400px" id="MyPhoto">
+        <h1 id="name">Ayush Santoshkumar Patel</h1>
+        <h5>Web Developer, Software Engineer</h5>
+        <a href="Resume.pdf" download="Resume" onclick="Resume"><button id="btn1"><i class="fa-solid fa-circle-arrow-down"></i> Resume</button></a>
+        <a href="#contactme"><button id="btn2" onclick="Contact"> Contact Me</button></a> 
+    </div>
+  </section>
+  <section id="infograph">
+    <div class="about-info">
+      <section id="about-me">
+        <h1 class="h1educ">About Me</h1>
+        <p><mark>
+            Hi, It's Ayush! <br>
+            I am a programming student currently studying at Seneca college. However, I come from a Programming background as I chose to code in my higher school education, which caught my interest to further took this field as a profession. Besides coding, I also have an interest in Editing videos and photos.
+            <br>
+            <br>
+            This website includes all information that is to be known to contact me regarding job opportunities.</mark>
+            <br>
+            <br>
+            <h5 id="date"><b>Date: </b><time class="curr-date"><mark>DATE</mark></time></h5>
+        </p>
+      </section>
+    
+    <section id="basic-info">
+        <h1 class="h1educ"> Basic Information</h1>
+        <div>
+            <h5><mark>AGE:</mark> </h5>
+            <p>19</p>
+            <h5><mark>EMAIL:</mark></h5>
+            <p>apatel577@myseneca.ca</p>
+            <h5><mark>LANGUAGE:</mark></h5>
+            <p>English, Hindi, Punjabi</p>
+            <h5><mark>SECTION:</mark></h5>
+            <p>NAA</p>
+            <h5><mark>STUDENT ID:</mark></h5>
+            <p>115585226</p>
+            <h5><mark>INSTRUCTOR:</mark></h5>
+            <p>Mark Merit</p>
+        </div>
+      </section>
+    </div>
+  </section>
+    <br>
+    <br>
+    <div id="honest">
+        <h1 class="h1educ">Academic Honesty</h1>
+        <p id="statement">
+            I declare that my assessment is wholly my own work in accordance with <a href="https://www.senecacollege.ca/about/policies/academic-integrity-policy.html" target="_blank">"Seneca Academic Policy"</a> . No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students. 
+        </p>
+    </div>
+    <section id="education">
+        <h1 class="h1edu">Education</h1>
+
+        <div id="edu-cis" class="edu-card">
+          <div class="edu-card-left">
+            <div>
+                <h3 class="h33">2020 - 2021</h3>
+                <h2 class="h22">High School Diploma</h2>
+            </div>
+          </div>
+          <section class="edu-card-txt">
+            <h2 class="h22">High School Diploma</h2>
+            <a href="https://www.cisdasuya.com/" target="_blank"><h3 class="h34">CIS INDIA</h3></a>
+            <p>Under the Supervision of Dr.Anit Arora, I passed my diploma in Sciences.</p>
+          </section>
+        </div>
+
+        <div id="edu-seneca" class="edu-card">
+          <div class="edu-card-left">
+            <div>
+                <h3 class="h33">2021 - 2025(expected)</h3>
+                <h2 class="h22">Advanced Diploma</h2>
+          </div>
+        </div>
+          <section class="edu-card-txt">
+            <h2 class="h22">Advanced Diploma(3 years)</h2>
+            <a href="https://www.senecacollege.ca/home.html" target="_blank"><h3 class="h34">SENECA COLLEGE</h3></a>
+            <p>
+                Under the Supervision of Mark Merit, I passed my course in Computer Programming and Anlysis(CPA) of WEB222 .
+            </p>
+          </section>
+        </div>
+      </section>
+      <br>
+        <h1 class="h1edu" id="contactme">Contact Form</h1>
+
+        <form id="contact-form" action="https://httpbin.org/post" method="post">
+          <div class="row">
+            <div class="col form-group">
+              <label for="fname"><span class="text-danger">*</span> First Name</label>
+              <input id="fname" class="form-control" name="fname" autocomplete="given-name" placeholder="John / Jane"
+                type="text" tabindex="1" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="lname"><span class="text-danger">*</span> Last Name</label>
+              <input id="lname" class="form-control" name="lname" autocomplete="family-name" placeholder="Doe"
+                type="text" tabindex="2" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="email"><span class="text-danger">*</span> Email Address</label>
+              <input id="email" class="form-control" name="email" autocomplete="email" placeholder="someone@example.com"
+                type="email" tabindex="3" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <label for="address"><span class="text-danger">*</span> Street Address</label>
+              <input id="address" class="form-control" name="address" autocomplete="street-address" type="text"
+                tabindex="4" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="city"><span class="text-danger">*</span> City</label>
+              <input id="city" class="form-control" name="city" autocomplete="address-level2" list="cities" tabindex="5"
+                required>
+              <datalist id="cities" class="" name="cities" tabindex="6">
+                <option value="Charlottetown"></option>
+                <option value="Edmonton"></option>
+                <option value="Fredericton"></option>
+                <option value="Halifax"></option>
+                <option value="Iqaluit"></option>
+                <option value="Ottawa"></option>
+                <option value="Quebec City"></option>
+                <option value="Regina"></option>
+                <option value="St. John's"></option>
+                <option value="Toronto"></option>
+                <option value="Victoria"></option>
+                <option value="Whitehorse"></option>
+                <option value="Winnipeg"></option>
+                <option value="Yellowknife"></option>
+              </datalist>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="prov"><span class="text-danger">*</span> Province</label>
+              <select id="prov" class="form-control" name="prov" autocomplete="address-level1" tabindex="7">
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland and Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option selected>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+          </div>
+
+          <!--validated with regex via JS-->
+          <div class="row">
+            <div class="col form-group">
+              <label for="post-code"><span class="text-danger">*</span> Postal Code</label>
+              <input id="post-code" class="form-control" name="postcode" autocomplete="postal-code" type="text"
+                tabindex="8" placeholder="M2J 2X5" required>
+              <div class="invalid-feedback">
+                Enter a valid Canadian postal code.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label class=""><span class="text-danger">*</span> Subject</label>
+              <div class="form-check ml-5 mb-2">
+                <input id="question" class="radio-btn form-check-input" type="radio" name="subject" value="question"
+                  tabindex="9" checked>
+                <label class="form-check-label" for="appt-morn">Question</label>
+              </div>
+
+              <div class="form-check ml-5 mb-2">
+                <input id="comment" class="radio-btn form-check-input" type="radio" name="subject" value="comment"
+                  tabindex="10">
+                <label class="form-check-label" for="appt-aft">Comment</label>
+              </div>
+
+              <div class="form-check ml-5">
+                <input id="hiring" class="radio-btn form-check-input" type="radio" name="subject" value="hiring"
+                  tabindex="11">
+                <label class="form-check-label" for="appt-even">Hiring</label>
+              </div>
+
+              <div id="work" class="ml-5">
+                <div class="row mt-3">
+                  <div class="col form-group">
+                    <label for="pay-rate"><span class="text-danger">*</span> Pay/Hour</label>
+                    <input id="pay-rate" class="form-control" name="pay" placeholder="$$$" type="number" tabindex="12"
+                      required>
+                    <div class="invalid-feedback">
+                      $0 or greater.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col form-group">
+                    <label for="url">Company Website URL</label>
+                    <input id="url" class="form-control" name="url" autocomplete="off"
+                      placeholder="http://company.website" type="url" tabindex="13">
+                    <small class="form-text text-muted">Optional</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="feedback"><span class="text-danger">*</span> Talk to Me</label>
+              <textarea id="feedback" class="form-control" name="feedback" rows="5" maxlength="1000" tabindex="14"
+                required></textarea>
+            </div>
+          </div>
+          <i>
+            <p><b>Note: </b><span class="text-danger">*</span> indicates that field cannot remain empty.</p>
+          </i>
+          <div class="d-flex flex-row-reverse mt-2">
+            <input class="btn btn-primary" id="submit" type="submit" name="submit" value="Submit" tabindex="15">
+            <input class="btn btn-secondary mr-3" id="reset" type="reset" name="reset" value="Reset" tabindex="16">
+          </div>
+        </form>
+    
+    <!-- Java Script File -->
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
